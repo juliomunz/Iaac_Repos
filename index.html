@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Estudiantil - Instituto Andrés Bello</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Registro Estudiantil - Instituto Andrés Bello</h1>
+  <form action="procesar_registro.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="apellido">Apellidos:</label>
+    <input type="text" id="apellido" name="apellido" required>
+    
+    <label for="rut">Rut:</label>
+    <input type="text" id="rut" name="rut" required>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required>
+
+    <label for="carrera">Carrera a Cursar:</label>
+    <input type="text" id="carrera" name="carrera" required>
+
+    <label for="fecha">Inicio Período Académico:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <button type="submit"> Registrar</button>
+  </form>
+  <br >
+  <p><a href="buscar_registro.php">Buscar Estudiante Registrado</a></p>
+  <p><a href="listar_estudiantes.php">Listar Estudiantes</a></p>
+  <p><a href="listar_carreras.html">Revisar Carreras</a></p>
+</body>
+</html>
